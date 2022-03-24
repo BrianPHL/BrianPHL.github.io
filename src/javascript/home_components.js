@@ -2,8 +2,9 @@ const iconsComponent = $('.homeIcon');
 let iconsCount = 0;
 let iconsStart = 1;
 const iconsTable = [
-    '👋', '🌊', '👍',
-    '🤙', '💅'
+    '👋', '😊', '🌊',
+    '👍', '🤙', '💅',
+    '😘', '❤️', '🙏'
 ];
 function iconsCycle() {
     let iconsIndex = (iconsStart + iconsCount) % iconsTable.length;
