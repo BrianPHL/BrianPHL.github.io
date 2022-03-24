@@ -1,0 +1,223 @@
+@use 'variables' as v;
+
+// ? Header Component
+
+.header {
+
+    grid-template-columns: 1fr 1fr;
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    padding-right: 20vw;
+    padding-left: 20vw;
+    transition: v.$slow;
+    position: fixed;
+    display: grid;
+    height: 8vh;
+    width: 100%;
+
+    &-logo {
+
+        grid-column: 1;
+        align-items: center;
+        display: flex;
+
+        h1 {
+
+            font-weight: 600;
+            transition: v.$slow;
+            font-size: 1rem;
+            color: white;
+
+        }
+
+        h1:hover {
+
+            cursor: pointer;
+            color: v.$accent;
+
+        }
+
+    }
+
+    &-nav {
+
+        justify-content: flex-end;
+        grid-column: 2;
+        align-items: center;
+        display: flex;
+
+        a {
+
+            text-decoration: none;
+            margin-left: 40px;
+            font-weight: 600;
+            transition: v.$slow;
+            font-size: 0.8rem;
+            color: white;
+
+        }
+
+        i {
+        
+            margin-left: 50px;
+            transition: v.$slow;
+            font-size: 1rem;
+            color: white;
+
+        }
+
+        a:hover {
+
+            padding-bottom: 5px;
+            border-bottom: 1px solid v.$accent;
+            color: v.$accent;
+
+        }
+
+        i:hover {
+
+            cursor: pointer;
+            color: v.$accent;
+
+        }
+
+    }
+
+}
+
+.home {
+
+    background-color: v.$primary;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+
+    &-info {
+
+        margin-bottom: 30px;
+
+        h2 {
+
+            margin-bottom: 5px;
+            text-align: center;
+            font-size: 2.75rem;
+            color: white;
+    
+        }
+    
+        h3 {
+    
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 500;
+            font-size: 0.85rem;
+            color: white;
+
+            #fivemHyperlink {
+
+                text-decoration: none;
+                transition: v.$slow;
+                color: v.$accent;
+
+            }
+
+            #fivemHyperlink:hover {
+
+                cursor: pointer;
+                color: v.$accent-hovered;
+
+            }
+    
+        }
+
+    }
+
+    &-buttons {
+
+        a {
+
+            text-decoration: none;
+            border-radius: 3px;
+            font-weight: 600;
+            font-size: 0.6rem;
+            padding: 12px 30px 12px 30px;
+            margin: 10px;
+            color: white;
+
+        }
+
+        #home-contact {
+
+            background-color: v.$accent;
+            transition: v.$slow;
+            border: 1px solid v.$accent;
+
+        }
+
+        #home-contact:hover {
+
+            background-color: v.$accent-hovered;
+            border: 1px solid v.$accent-hovered;
+
+        }
+
+        #home-download {
+            
+            transition: v.$slow;
+            border: 1px solid v.$accent;
+
+        }
+
+        #home-download:hover {
+
+            background-color: v.$accent;
+
+        }
+
+    }
+
+}
+
+.about {
+
+    background-color: v.$secondary;
+    border-top: 1px solid v.$tertiary;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 50vh;
+
+    i {
+
+        margin-bottom: 30px;
+        font-size: 8rem;
+        color: v.$accent;
+
+    }
+
+    h2 {
+
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        font-weight: 400;
+        font-size: 2rem;
+        color: white;
+
+    }
+
+    h3 {
+
+        text-align: center;
+        font-weight: 300;
+        font-size: 0.8rem;
+        width: 600px;
+        color: white;
+
+    }
+
+}
