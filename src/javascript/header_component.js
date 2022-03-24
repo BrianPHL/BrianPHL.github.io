@@ -1,29 +1,17 @@
 const headerComponent = $('.header');
-const headerBorder = '1px solid #1E1E1E';
-let scrollPos = 0;
-const initialState = [
-    'transparent',
-    '1px solid transparent'
-];
-const activeState = [
-    '#101010',
-    '1px solid #1E1E1E'
-];
+let lastScrollTop = 0;
 $(() => {
-    $(document).on('scroll', function () {
-        scrollPos = window.scrollY;
-        if (scrollPos > 100) {
-            headerComponent.css({
-                'background-color': activeState[0],
-                'border-bottom': activeState[1]
-            });
+    $(window).on('scroll', function () {
+        let initialScrollTop = $(this).scrollTop();
+        if (initialScrollTop > lastScrollTop && lastScrollTop > 0) {
+            console.log('DOWN');
+            headerComponent.css({ 'top': '-8vh' });
         }
         else {
-            headerComponent.css({
-                'background-color': initialState[0],
-                'border-bottom': initialState[1]
-            });
+            console.log('UP');
+            headerComponent.css({ 'top': '0vh' });
         }
+        lastScrollTop = initialScrollTop;
     });
     $('#setLightmode').on('click', () => {
         alert('This feature is not yet available but will be shipped soon enough.');

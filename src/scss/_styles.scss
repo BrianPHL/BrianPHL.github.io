@@ -5,11 +5,11 @@
 .header {
 
     grid-template-columns: 1fr 1fr;
-    background-color: transparent;
-    border-bottom: 1px solid transparent;
+    background-color: #101010;
+    border-bottom: 1px solid #1E1E1E;
     padding-right: 20vw;
     padding-left: 20vw;
-    transition: v.$slow;
+    transition: 0.2s ease all;
     position: fixed;
     display: grid;
     height: 8vh;
