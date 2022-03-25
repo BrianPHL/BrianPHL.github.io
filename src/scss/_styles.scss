@@ -349,6 +349,14 @@
 .contact {
 
     background-color: v.$primary;
-    height: 30vh;
+    height: 50vh;
+
+}
+
+.footer {
+
+    background-color: v.$secondary;
+    border-top: 1px solid v.$tertiary;
+    height: 15vh;
 
 }
