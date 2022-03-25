@@ -184,6 +184,7 @@
 .about {
 
     background-color: v.$secondary;
+    border-bottom: 1px solid v.$tertiary;
     padding-right: 20vw;
     padding-left: 20vw;
     border-top: 1px solid v.$tertiary;
@@ -194,7 +195,7 @@
         grid-template-rows: 30px auto;
         margin-top: 150px;
         display: grid;
-        gap: 20px;
+        gap: 30px;
 
         &-header {
 
@@ -237,7 +238,7 @@
         margin-bottom: 150px;
         margin-top: 50px;
         display: grid;
-        gap: 20px;
+        gap: 50px;
 
         &-header {
 
@@ -342,5 +343,12 @@
         }
 
     }
+
+}
+
+.contact {
+
+    background-color: v.$primary;
+    height: 30vh;
 
 }
