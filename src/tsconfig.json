@@ -1,0 +1,15 @@
+{
+
+    "compilerOptions": {
+
+        "target": "ES6",
+        "module": "CommonJS",
+        "sourceMap": false,
+        "outDir": "func/javascript",
+        "rootDir": "func/typescript"
+
+    },
+
+    "compileOnSave": true
+
+}
