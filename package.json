@@ -1,0 +1,23 @@
+{
+  "name": "brianphl",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrianPHL/BrianPHL.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrianPHL/BrianPHL.github.io/issues"
+  },
+  "homepage": "https://github.com/BrianPHL/BrianPHL.github.io#readme",
+  "devDependencies": {
+    "@types/jquery": "^3.5.14"
+  }
+}
