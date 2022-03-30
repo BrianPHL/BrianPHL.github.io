@@ -7,6 +7,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/public/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/src/style/css/index.min.css">
         <link rel="stylesheet" href="/lib/fontawesome/css/all.min.css">
         <title>Brian Pasco</title>
@@ -15,7 +16,45 @@
 
     <body>
     
-        <section class="header"></section>
+        <section class="header">
+
+            <h1 class="header-title">
+                <span style="color: #E9204F;">B</span>P
+            </h1>
+
+            <div class="header-nav">
+
+                <i class="header-nav-btn fa-solid fa-bars" id="reveal-navPanel"></i>
+
+            </div>
+
+            <div class="header-navPanel">
+
+                <div class="header-navPanel-close">
+                    
+                    <i class="fa-solid fa-xmark" id="conceal-navPanel"></i>
+                    
+                </div>
+
+                <div class="header-navPanel-navigation">
+
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Updates</a>
+                    <a href="#">Contact</a>
+
+                </div>
+
+                <div class="header-navPanel-footer">
+
+                    <p>Copyright 2022 Brian. All rights reserved.</p>
+
+                </div>
+
+            </div>
+
+        </section>
 
         <section class="home"></section>
 
@@ -40,6 +79,7 @@
         <section class="contact"></section>
         
         <script src="/lib/jquery/js/jquery.min.js"></script>
+        <script src="/src/func/javascript/header.js"></script>
 
     </body>
 

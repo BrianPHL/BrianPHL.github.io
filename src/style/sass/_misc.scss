@@ -4,8 +4,22 @@
             
 $montserrat: 'Montserrat', sans-serif;
 
+$trans-slow: 0.3s ease all;
+$trans-fast: 0.2s ease all;
+
+// DARK MODE
+// $primary   : #202020;
+// $secondary : #101010;
+// $accent    : #E9204F;
+
+// LIGHT MODE
+$primary   : #EBEBEB;
+$secondary : #FFFFFF;
+$accent    : #E9204F;
+
 body {
 
+    background-color: $primary;
     scroll-behavior: smooth;
     line-height: 1;
 
