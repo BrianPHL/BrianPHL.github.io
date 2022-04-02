@@ -10,6 +10,34 @@
 @import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
 @import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
 
+:root {
+
+    --montserrat : 'Montserrat', sans-serif;
+    --trans-slow : 0.3s ease all;
+    --trans-fast : 0.2s ease all;
+    --accent     : #E9204F;
+    
+}
+
+
+html {
+    
+    --border-line : rgb(210, 210, 210);
+    --primary     : #EBEBEB;
+    --secondary   : #FFFFFF;
+    --text        : #202020;
+
+}
+
+html[data-theme="dark"] {
+
+    --border-line : transparent;
+    --primary     : #202020;
+    --secondary   : #101010;
+    --text        : #FFFFFF;
+
+}
+
 body {
 
     background-color: var(--primary);
