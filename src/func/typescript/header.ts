@@ -46,7 +46,7 @@ const themeDark = () => {
 
     document.documentElement.setAttribute('data-theme', 'dark')
     mvThemeToggle.className = 'fi fi-rr-sun'
-    mvNavLogo.setAttribute("src", "/src/assets/dm-logo.png")
+    mvNavLogo.setAttribute("src", "/src/assets/dm-logo.svg")
 
 }
 
@@ -54,7 +54,7 @@ const themeLight = () => {
 
     document.documentElement.setAttribute('data-theme', 'light')
     mvThemeToggle.className = 'fa-solid fa-moon'
-    mvNavLogo.setAttribute("src", "/src/assets/lm-logo.png")
+    mvNavLogo.setAttribute("src", "/src/assets/lm-logo.svg")
 
 }
 
