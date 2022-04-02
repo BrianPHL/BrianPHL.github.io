@@ -1,0 +1,217 @@
+@use 'misc' as *;
+
+.header {
+
+    &-desktop {
+
+        background-color: red;
+        padding-right: 20px;
+        padding-left: 20px;
+        position: fixed;
+        height: 6vh;
+        width: 100%;
+        top: 0;
+        
+    }
+    
+    &-mobile {
+
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--secondary);
+        border-top: 1px solid var(--border-line);
+        position: fixed;
+        display: grid;
+        bottom: 0;
+        height: 60px;
+        width: 100%;
+
+        &-logo {
+
+            padding-left: 20px;
+            grid-column: 1;
+            align-items: center;
+            display: grid;
+            height: inherit;
+
+            img {
+
+                width: 2rem;
+
+            }
+
+        }
+
+        &-btns {
+
+            justify-content: right;
+            padding-right: 20px;
+            grid-column: 2;
+            align-items: center;
+            display: flex;
+
+            i {
+
+                margin-top: 5px;
+                font-size: 1.25rem;
+                color: var(--text);
+
+            }
+
+            i:hover {
+
+                cursor: pointer;
+                color: var(--accent);
+
+            }
+
+            i:first-child {
+
+                margin-right: 13px;
+
+            }
+
+        }
+
+        &-nav {
+
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 60px;
+            background-color: var(--secondary);
+            border-top: 1px solid var(--border-line);
+            position: fixed;
+            display: grid;
+            bottom: -200px;
+            height: auto;
+            width: 100%;
+
+            &-links {
+
+                justify-content: center;
+                flex-direction: row;
+                padding-bottom: 20px;
+                align-content: center;
+                margin-right: 5px;
+                margin-left: 5px;
+                padding-top: 20px;
+                flex-wrap: wrap;
+                grid-row: 1;
+                display: flex;
+                gap: 20px;
+
+                i {
+
+                    align-items: center;
+                    display: flex;
+                    color: var(--text);
+                    
+                    a {
+                        
+                        text-decoration: none;
+                        font-weight: 500;
+                        margin-left: 5px;
+                        font-style: normal;
+                        font-size: 0.8rem;
+                        color: var(--text);
+    
+                    }
+
+                }
+
+                i:hover {
+
+                    color: var(--accent);
+
+                    a {
+
+                        color: var(--accent);
+
+                    }
+
+                }
+
+            }
+
+            &-close {
+
+                place-items: center;
+                border-top: 1px solid var(--border-line);
+                grid-row: 2;
+                display: grid;
+                
+                i {
+                    
+                    background-color: var(--accent);
+                    justify-content: center;
+                    border-radius: 100%;
+                    align-items: center;
+                    font-size: 0.8rem;
+                    display: flex;
+                    border: 2px solid var(--accent);
+                    height: 30px;
+                    width: 30px;
+                    color: var(--text)
+
+                }
+    
+                i:hover {
+    
+                    background-color: transparent;
+                    border: 2px solid var(--accent);
+                    cursor: pointer;
+                    color: var(--accent);
+    
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .desktop {
+
+        display: none;
+
+    }
+
+}
+
+@media screen and (min-width: 501px) {
+
+    .mobile {
+
+        display: none;
+
+    }
+
+    .desktop {
+
+        text-transform: uppercase;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        height: 100vh;
+        color: white;
+    
+        h1 {
+    
+            font-size: 1.25rem;
+    
+        }
+    
+        h2 {
+    
+            font-size: 1rem;
+    
+        }
+    
+    }
+
+}
+

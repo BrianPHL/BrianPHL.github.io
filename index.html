@@ -7,39 +7,97 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/public/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/src/style/css/index.min.css">
-        <link rel="stylesheet" href="/lib/fontawesome/css/all.min.css">
         <title>Brian Pasco</title>
 
     </head>
 
     <body>
-    
-        <section class="header"></section>
 
-        <section class="home"></section>
+        <section class="desktop">
 
-        <section class="expertise"></section>
-
-        <section class="about">
-
-            <div class="about-info">
-
-            </div>
-
-            <div class="about-tech">
-                
-            </div>
+            <h1>Website is only available in mobile view</h1>
+            <h2>Desktop view will be available soon</h2>
 
         </section>
+        
+        <section class="mobile">
+            
+            <section class="header">
 
-        <section class="projects"></section>
+                <div class="header-mobile">
+    
+                    <div class="header-mobile-logo">
+    
+                        <img id="mv-logo" src="/src/assets/lm-logo.png" alt="">
+    
+                    </div>
+    
+                    <div class="header-mobile-btns">
+    
+                        <i id="mv-theme" class="fa-solid fa-moon"></i>
+                        <i id="mv-nav" class="fi fi-rr-apps"></i>
+    
+                    </div>
+    
+                    <div class="header-mobile-nav">
+    
+                        <div class="header-mobile-nav-links">
+                                
+                                <i class="fi fi-rr-home">
+                                    <a href="#">Home</a>
+                                </i>
+    
+                                <i class="fi fi-rr-mode-portrait">
+                                    <a href="#">About</a>
+                                </i>
+    
+                                <i class="fi fi-rs-folder">
+                                    <a href="#">Projects</a>
+                                </i>
+    
+                                <i class="fa-brands fa-github">
+                                    <a href="#">Updates</a>
+                                </i>
+    
+                                <i class="fi fi-rr-envelope-plus">
+                                  <a href="#">Contact</a>  
+                                </i>
+    
+                        </div>
+    
+                        <div class="header-mobile-nav-close">
+    
+                            <i id="mv-nav-close" class="fa-solid fa-times"></i>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="header-desktop" style="display: none;">w</div>
+    
+            </section>
+    
+            <section class="home"></section>
+    
+            <section class="expertise"></section>
+    
+            <section class="about">
+            </section>
+    
+            <section class="projects"></section>
+    
+            <section class="updates"></section>
+    
+            <section class="contact"></section>
 
-        <section class="updates"></section>
-
-        <section class="contact"></section>
+        </section>
         
         <script src="/lib/jquery/js/jquery.min.js"></script>
+        <script src="/src/func/javascript/header.js"></script>
 
     </body>
 
