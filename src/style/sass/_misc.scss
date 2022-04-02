@@ -10,3 +10,20 @@
 @import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
 @import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
 
+body {
+
+    background-color: var(--primary);
+    scroll-behavior: smooth;
+    line-height: 1;
+
+}
+
+* {
+
+    font-family: var(--montserrat);
+    transition: var(--trans-fast);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
