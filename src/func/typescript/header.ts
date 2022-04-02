@@ -37,3 +37,55 @@ mvNavConceal.addEventListener('click', () => {
     )
     
 })
+
+let   themeState    = ""
+const themePrefers  = window.matchMedia("(prefers-color-scheme: dark)").matches;
+const mvThemeToggle = document.querySelector('#mv-theme');
+
+const themeDark = () => {
+
+    document.documentElement.setAttribute('data-theme', 'dark')
+    mvThemeToggle.className = 'fi fi-rr-sun'
+    mvNavLogo.setAttribute("src", "/src/assets/dm-logo.png")
+
+}
+
+const themeLight = () => {
+
+    document.documentElement.setAttribute('data-theme', 'light')
+    mvThemeToggle.className = 'fa-solid fa-moon'
+    mvNavLogo.setAttribute("src", "/src/assets/lm-logo.png")
+
+}
+
+const checkPrefers = () => {
+
+    ( themePrefers )
+
+    ? (
+        themeDark(),
+        themeState = "dark"
+    )
+
+    : (
+        themeLight(),
+        themeState = "light"
+    )
+
+}
+checkPrefers()
+
+mvThemeToggle.addEventListener('click', () => {
+    
+    ( themeState == 'light' )
+
+        ? (
+            themeDark(),
+            themeState = "dark"
+        )
+        : (
+            themeLight(),
+            themeState = "light"
+        )
+
+})
