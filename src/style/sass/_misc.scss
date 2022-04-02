@@ -1,35 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:' +
             'wght@100;200;300;400;500;600;700;800;900&family=Poppins:' +
             'wght@100;200;300;400;500;600;700;800;900&display=swap');
-            
-$montserrat: 'Montserrat', sans-serif;
 
-$trans-slow: 0.3s ease all;
-$trans-fast: 0.2s ease all;
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
 
-// DARK MODE
-// $primary   : #202020;
-// $secondary : #101010;
-// $accent    : #E9204F;
-
-// LIGHT MODE
-$primary   : #EBEBEB;
-$secondary : #FFFFFF;
-$accent    : #E9204F;
-
-body {
-
-    background-color: $primary;
-    scroll-behavior: smooth;
-    line-height: 1;
-
-}
-
-* {
-
-    font-family: $montserrat;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-
-}
