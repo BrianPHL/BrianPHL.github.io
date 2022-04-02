@@ -15,7 +15,7 @@ mvNavReveal.addEventListener('click', () => {
 mvNavConceal.addEventListener('click', () => {
     (mvNavState)
         ? (mvNavPanel.animate({
-            'bottom': '-200px'
+            'bottom': '-40vh'
         }, 100),
             mvNavState = false)
         : (console.log('Error has occured in Ln.: 41-52'));
