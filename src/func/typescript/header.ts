@@ -28,7 +28,7 @@ mvNavConceal.addEventListener('click', () => {
 
     ? (
         mvNavPanel.animate({
-            'bottom': '-200px'
+            'bottom': '-40vh'
         }, 100),
         mvNavState = false
     )

@@ -21,7 +21,7 @@
         border-top: 1px solid var(--border-line);
         position: fixed;
         display: grid;
-        bottom: 0;
+        bottom: 0vh;
         height: 10vh;
         width: 100%;
 
@@ -44,10 +44,11 @@
         &-btns {
 
             justify-content: right;
+            grid-auto-flow: column;
             padding-right: 20px;
-            grid-column: 2;
             align-items: center;
-            display: flex;
+            grid-column: 2;
+            display: grid;
 
             i {
 
@@ -80,26 +81,25 @@
             border-top: 1px solid var(--border-line);
             position: fixed;
             display: grid;
-            bottom: -200px;
+            bottom: -40vh;
             height: auto;
-            width: 100%;
-
+            
             &-links {
-
+                
                 justify-content: center;
                 flex-direction: row;
-                padding-bottom: 20px;
-                align-content: center;
-                margin-right: 5px;
-                margin-left: 5px;
-                padding-top: 20px;
+                padding-bottom: 10px;
+                margin-right: 10px;
+                align-items: center;
+                margin-left: 10px;
+                padding-top: 10px;
                 flex-wrap: wrap;
                 grid-row: 1;
                 display: flex;
-                gap: 20px;
 
                 i {
 
+                    margin: 7.5px;
                     align-items: center;
                     display: flex;
                     color: var(--text);
@@ -149,7 +149,7 @@
                     border: 2px solid var(--accent);
                     height: 40px;
                     width: 40px;
-                    color: var(--text)
+                    color: var(--secondary);
 
                 }
     
