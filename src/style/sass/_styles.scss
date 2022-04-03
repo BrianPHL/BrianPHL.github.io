@@ -182,7 +182,7 @@
 
     &-info {
 
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         text-align: center;
 
         h1 {
@@ -223,7 +223,6 @@
         flex-direction: row;
         flex-wrap: wrap;
         display: flex;
-        gap: 10px;
 
         a {
 
@@ -237,6 +236,7 @@
             transition: var(--trans-fast);
             font-size: 0.8rem;
             border: 2px solid var(--accent);
+            margin: 5px;
             color: var(--text);
 
         }
