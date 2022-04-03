@@ -23,24 +23,42 @@ const themeDark = () => {
     document.documentElement.setAttribute('data-theme', 'dark');
     mvThemeToggle.className = 'fi fi-rr-sun';
     mvNavLogo.setAttribute("src", "/src/assets/dm-logo.svg");
+    localStorage.setItem("data-theme", "dark");
+    themeState = "dark";
 };
 const themeLight = () => {
     document.documentElement.setAttribute('data-theme', 'light');
     mvThemeToggle.className = 'fa-solid fa-moon';
     mvNavLogo.setAttribute("src", "/src/assets/lm-logo.svg");
+    localStorage.setItem("data-theme", "light");
+    themeState = "light";
 };
 const checkPrefers = () => {
-    (themePrefers)
-        ? (themeDark(),
-            themeState = "dark")
-        : (themeLight(),
-            themeState = "light");
+    const savedTheme = localStorage.getItem('data-theme');
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    if (!savedTheme) {
+        if (themePrefers) {
+            themeDark();
+        }
+        else {
+            themeLight();
+        }
+    }
+    else {
+        if (savedTheme == 'dark') {
+            console.log('dark');
+            themeDark();
+        }
+        else {
+            console.log('light');
+            themeLight();
+        }
+    }
 };
 checkPrefers();
 mvThemeToggle.addEventListener('click', () => {
-    (themeState == 'light')
-        ? (themeDark(),
-            themeState = "dark")
-        : (themeLight(),
-            themeState = "light");
+    (themeState == 'dark')
+        ? (themeLight())
+        : (themeDark());
 });
+// localStorage.clear()
