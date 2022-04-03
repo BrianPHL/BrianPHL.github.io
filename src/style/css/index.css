@@ -103,6 +103,8 @@ body {
   grid-template-rows: auto 10vh;
   background-color: var(--secondary);
   border-top: 1px solid var(--border-line);
+  -webkit-transition: var(--trans-slow);
+  transition: var(--trans-slow);
   position: fixed;
   display: grid;
   bottom: -40vh;
@@ -204,7 +206,7 @@ body {
   height: 100vh;
 }
 .home-info {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
 }
 .home-info h1 {
@@ -238,7 +240,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
 }
 .home-cta a {
   text-decoration: none;
@@ -252,6 +253,7 @@ body {
   transition: var(--trans-fast);
   font-size: 0.8rem;
   border: 2px solid var(--accent);
+  margin: 5px;
   color: var(--text);
 }
 .home-cta a:hover {
