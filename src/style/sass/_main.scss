@@ -20,7 +20,7 @@
 }
 
 
-html {
+html[data-theme="light"] {
     
     --border-line : rgb(210, 210, 210);
     --primary     : #EBEBEB;
