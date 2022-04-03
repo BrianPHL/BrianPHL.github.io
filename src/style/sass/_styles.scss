@@ -79,6 +79,7 @@
             grid-template-rows: auto 10vh;
             background-color: var(--secondary);
             border-top: 1px solid var(--border-line);
+            transition: var(--trans-slow);
             position: fixed;
             display: grid;
             bottom: -40vh;

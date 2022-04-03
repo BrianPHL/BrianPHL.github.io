@@ -103,6 +103,8 @@ body {
   grid-template-rows: auto 10vh;
   background-color: var(--secondary);
   border-top: 1px solid var(--border-line);
+  -webkit-transition: var(--trans-slow);
+  transition: var(--trans-slow);
   position: fixed;
   display: grid;
   bottom: -40vh;
