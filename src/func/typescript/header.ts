@@ -25,63 +25,64 @@ mvNavConceal.addEventListener('click', () => {
     ( mvNavState ) 
 
     ? (
-        mvNavPanel.style.bottom = "-22.5%",
+        mvNavPanel.style.bottom = "-100%",
         mvNavState = false
     )
     : (
         console.log('Error has occured in Ln.: 41-52')
-    )
+    );
     
 })
 
-let   themeState    = ""
-const themePrefers  = window.matchMedia("(prefers-color-scheme: dark)").matches;
 const mvThemeToggle = document.querySelector('#mv-theme');
 
-const themeDark = () => {
+const toggleThemeDark = () => {
 
     document.documentElement.setAttribute('data-theme', 'dark')
     mvThemeToggle.className = 'fi fi-rr-sun'
     mvNavLogo.setAttribute("src", "/src/assets/dm-logo.svg")
+    localStorage.setItem("data-theme", "dark")
+    themeState = "dark"
 
 }
 
-const themeLight = () => {
+const toggleThemeLight = () => {
 
     document.documentElement.setAttribute('data-theme', 'light')
     mvThemeToggle.className = 'fa-solid fa-moon'
     mvNavLogo.setAttribute("src", "/src/assets/lm-logo.svg")
+    localStorage.setItem("data-theme", "light")
+    themeState = "light"
 
 }
 
-const checkPrefers = () => {
+const checkTheme = () => {
 
-    ( themePrefers )
+    const savedTheme = localStorage.getItem('data-theme');
 
-    ? (
-        themeDark(),
-        themeState = "dark"
-    )
-
-    : (
-        themeLight(),
-        themeState = "light"
-    )
+    ( savedTheme == 'dark' )
+        
+        ? (
+            mvThemeToggle.className = 'fi fi-rr-sun',
+            mvNavLogo.setAttribute("src", "/src/assets/dm-logo.svg")
+        )
+        : (
+            mvThemeToggle.className = 'fa-solid fa-moon',
+            mvNavLogo.setAttribute("src", "/src/assets/lm-logo.svg")
+        )
 
 }
-checkPrefers()
+checkTheme()
 
 mvThemeToggle.addEventListener('click', () => {
     
-    ( themeState == 'light' )
+    ( themeState == 'dark' )
 
         ? (
-            themeDark(),
-            themeState = "dark"
+            toggleThemeLight()
         )
         : (
-            themeLight(),
-            themeState = "light"
-        )
+            toggleThemeDark()
+        );
 
 })
