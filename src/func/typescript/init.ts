@@ -23,34 +23,24 @@ const checkPrefers = () => {
     document.documentElement.setAttribute('data-theme', savedTheme);
 
     ( !savedTheme )
-
     ? (
-
         ( themePrefers )
-
             ? (
                 setThemeDark()
             )
-
             : (
                 setThemeLight()
             )
-
     )
-    
     : (
-
         ( savedTheme == 'dark' )
-
             ? (
                 setThemeDark()
             )
-
             : (
             setThemeLight()
             )
-
     )
-
+    
 }
 checkPrefers()
