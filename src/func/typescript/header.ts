@@ -10,13 +10,14 @@ mvNavReveal.addEventListener('click', () => {
 
     ( !mvNavState )
     
-    ? (
-        mvNavPanel.style.bottom = "0%",
-        mvNavState = true 
-    )
-    : (
-        console.log('Error has occured in Ln.: 25-39')
-    )
+        ? (
+            mvNavPanel.style.bottom = "0%",
+            mvNavState = true 
+        )
+
+        : (
+            console.log('Error has occured in Ln.: 25-39')
+        )
 
 })
 
@@ -24,13 +25,14 @@ mvNavConceal.addEventListener('click', () => {
 
     ( mvNavState ) 
 
-    ? (
-        mvNavPanel.style.bottom = "-100%",
-        mvNavState = false
-    )
-    : (
-        console.log('Error has occured in Ln.: 41-52')
-    );
+        ? (
+            mvNavPanel.style.bottom = "-50%",
+            mvNavState = false
+        )
+
+        : (
+            console.log('Error has occured in Ln.: 41-52')
+        );
     
 })
 
@@ -66,6 +68,7 @@ const checkTheme = () => {
             mvThemeToggle.className = 'fi fi-rr-sun',
             mvNavLogo.setAttribute("src", "/src/assets/dm-logo.svg")
         )
+
         : (
             mvThemeToggle.className = 'fa-solid fa-moon',
             mvNavLogo.setAttribute("src", "/src/assets/lm-logo.svg")
@@ -81,6 +84,7 @@ mvThemeToggle.addEventListener('click', () => {
         ? (
             toggleThemeLight()
         )
+        
         : (
             toggleThemeDark()
         );

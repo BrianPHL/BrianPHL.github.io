@@ -12,7 +12,7 @@ mvNavReveal.addEventListener('click', () => {
 });
 mvNavConceal.addEventListener('click', () => {
     (mvNavState)
-        ? (mvNavPanel.style.bottom = "-100%",
+        ? (mvNavPanel.style.bottom = "-50%",
             mvNavState = false)
         : (console.log('Error has occured in Ln.: 41-52'));
 });
