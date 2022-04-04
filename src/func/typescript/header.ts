@@ -6,35 +6,60 @@ const mvNavLogo    = document.querySelector('#mv-logo');
 const mvNavPanel   = <HTMLElement>document.querySelector('.header-mobile-nav');
 let   mvNavState   = false
 
+const concealMvNavPanel = () => {
+
+    const mvNavPanelHeight = mvNavPanel.clientHeight;
+    mvNavPanel.style.bottom = "-" + mvNavPanelHeight + "px";
+
+}
+concealMvNavPanel()
+
 mvNavReveal.addEventListener('click', () => {
 
     ( !mvNavState )
-    
-    ? (
-        mvNavPanel.style.bottom = "0%",
-        mvNavState = true 
-    )
-    : (
-        console.log('Error has occured in Ln.: 25-39')
-    )
+        ? (
+            mvNavPanel.style.bottom = "0px",
+            mvNavState = true 
+        )
+        : (
+            console.log('Error has occured in Ln.: 25-39')
+        )
 
 })
 
 mvNavConceal.addEventListener('click', () => {
 
-    ( mvNavState ) 
+    const mvNavPanelHeight = mvNavPanel.clientHeight;
 
-    ? (
-        mvNavPanel.style.bottom = "-100%",
-        mvNavState = false
-    )
-    : (
-        console.log('Error has occured in Ln.: 41-52')
-    );
+    ( mvNavState ) 
+        ? (
+            mvNavPanel.style.bottom = "-" + mvNavPanelHeight + "px",
+            mvNavState = false
+        )
+        : (
+            console.log('Error has occured in Ln.: 41-52')
+        );
     
 })
 
 const mvThemeToggle = document.querySelector('#mv-theme');
+
+const checkTheme = () => {
+
+    const savedTheme = localStorage.getItem('data-theme');
+
+    ( savedTheme == 'dark' )    
+        ? (
+            mvThemeToggle.className = 'fi fi-rr-sun',
+            mvNavLogo.setAttribute("src", "/src/assets/dm-logo.svg")
+        )
+        : (
+            mvThemeToggle.className = 'fa-solid fa-moon',
+            mvNavLogo.setAttribute("src", "/src/assets/lm-logo.svg")
+        )
+
+}
+checkTheme()
 
 const toggleThemeDark = () => {
 
@@ -56,31 +81,12 @@ const toggleThemeLight = () => {
 
 }
 
-const checkTheme = () => {
-
-    const savedTheme = localStorage.getItem('data-theme');
-
-    ( savedTheme == 'dark' )
-        
-        ? (
-            mvThemeToggle.className = 'fi fi-rr-sun',
-            mvNavLogo.setAttribute("src", "/src/assets/dm-logo.svg")
-        )
-        : (
-            mvThemeToggle.className = 'fa-solid fa-moon',
-            mvNavLogo.setAttribute("src", "/src/assets/lm-logo.svg")
-        )
-
-}
-checkTheme()
-
 mvThemeToggle.addEventListener('click', () => {
     
     ( themeState == 'dark' )
-
         ? (
             toggleThemeLight()
-        )
+        ) 
         : (
             toggleThemeDark()
         );

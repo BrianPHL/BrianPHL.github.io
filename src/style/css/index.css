@@ -149,7 +149,7 @@ body {
   transition: var(--trans-slow);
   position: fixed;
   display: grid;
-  bottom: -100%;
+  bottom: -50%;
   height: auto;
 }
 .header-mobile-nav-links {
@@ -160,13 +160,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   margin-right: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-left: 10px;
-  padding-top: 10px;
+  padding-top: 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   grid-row: 1;
@@ -175,7 +175,7 @@ body {
   display: flex;
 }
 .header-mobile-nav-links i {
-  margin: 7.5px;
+  margin: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -187,9 +187,9 @@ body {
 .header-mobile-nav-links i a {
   text-decoration: none;
   font-weight: 500;
-  margin-left: 5px;
+  margin-left: 10px;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--text);
 }
 .header-mobile-nav-links i:hover {
