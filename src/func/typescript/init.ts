@@ -22,31 +22,35 @@ const checkPrefers = () => {
     const savedTheme = localStorage.getItem('data-theme');
     document.documentElement.setAttribute('data-theme', savedTheme);
 
-    if ( !savedTheme ) {
+    ( !savedTheme )
 
-        if ( themePrefers ) {
+    ? (
 
-            setThemeDark()
+        ( themePrefers )
 
-        } else {
+            ? (
+                setThemeDark()
+            )
 
+            : (
+                setThemeLight()
+            )
+
+    )
+    
+    : (
+
+        ( savedTheme == 'dark' )
+
+            ? (
+                setThemeDark()
+            )
+
+            : (
             setThemeLight()
+            )
 
-        }
-
-    } else {
-
-        if ( savedTheme == 'dark' ) {
-
-            setThemeDark()
-            
-        } else {
-            
-            setThemeLight()
-
-        }
-
-    }
+    )
 
 }
 checkPrefers()

@@ -13,21 +13,12 @@ const setThemeLight = () => {
 const checkPrefers = () => {
     const savedTheme = localStorage.getItem('data-theme');
     document.documentElement.setAttribute('data-theme', savedTheme);
-    if (!savedTheme) {
-        if (themePrefers) {
-            setThemeDark();
-        }
-        else {
-            setThemeLight();
-        }
-    }
-    else {
-        if (savedTheme == 'dark') {
-            setThemeDark();
-        }
-        else {
-            setThemeLight();
-        }
-    }
+    (!savedTheme)
+        ? ((themePrefers)
+            ? (setThemeDark())
+            : (setThemeLight()))
+        : ((savedTheme == 'dark')
+            ? (setThemeDark())
+            : (setThemeLight()));
 };
 checkPrefers();
