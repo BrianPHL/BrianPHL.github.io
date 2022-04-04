@@ -90,18 +90,18 @@
                 
                 justify-content: center;
                 flex-direction: row;
-                padding-bottom: 10px;
+                padding-bottom: 15px;
                 margin-right: 10px;
                 align-items: center;
                 margin-left: 10px;
-                padding-top: 10px;
+                padding-top: 15px;
                 flex-wrap: wrap;
                 grid-row: 1;
                 display: flex;
 
                 i {
 
-                    margin: 7.5px;
+                    margin: 10px;
                     align-items: center;
                     display: flex;
                     color: var(--text);
@@ -110,9 +110,9 @@
                         
                         text-decoration: none;
                         font-weight: 500;
-                        margin-left: 5px;
+                        margin-left: 10px;
                         font-style: normal;
-                        font-size: 1rem;
+                        font-size: 1.2rem;
                         color: var(--text);
     
                     }
