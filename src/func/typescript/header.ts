@@ -53,9 +53,10 @@ checkTheme()
 
 const toggleThemeDark = () => {
 
-    document.documentElement.setAttribute('data-theme', 'dark')
-    mvThemeToggle.className = 'fi fi-rr-sun'
     mvNavLogo.setAttribute("src", "/src/assets/dm-logo.svg")
+    mvThemeToggle.className = 'fi fi-rr-sun'
+
+    document.documentElement.setAttribute('data-theme', 'dark')
     localStorage.setItem("data-theme", "dark")
     themeState = "dark"
 
@@ -63,9 +64,10 @@ const toggleThemeDark = () => {
 
 const toggleThemeLight = () => {
 
-    document.documentElement.setAttribute('data-theme', 'light')
-    mvThemeToggle.className = 'fa-solid fa-moon'
     mvNavLogo.setAttribute("src", "/src/assets/lm-logo.svg")
+    mvThemeToggle.className = 'fa-solid fa-moon'
+    
+    document.documentElement.setAttribute('data-theme', 'light')
     localStorage.setItem("data-theme", "light")
     themeState = "light"
 
