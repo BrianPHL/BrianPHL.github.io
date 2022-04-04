@@ -149,7 +149,7 @@ body {
   transition: var(--trans-slow);
   position: fixed;
   display: grid;
-  bottom: -100%;
+  bottom: -50%;
   height: auto;
 }
 .header-mobile-nav-links {
