@@ -4,21 +4,15 @@ const mvNavConceal = document.querySelector('#mv-nav-close');
 const mvNavLogo = document.querySelector('#mv-logo');
 const mvNavPanel = document.querySelector('.header-mobile-nav');
 let mvNavState = false;
-const concealMvNavPanel = () => {
-    const mvNavPanelHeight = mvNavPanel.clientHeight;
-    mvNavPanel.style.bottom = "-" + mvNavPanelHeight + "px";
-};
-concealMvNavPanel();
 mvNavReveal.addEventListener('click', () => {
     (!mvNavState)
-        ? (mvNavPanel.style.bottom = "0px",
+        ? (mvNavPanel.style.bottom = "0vh",
             mvNavState = true)
         : (console.log('Error has occured in Ln.: 25-39'));
 });
 mvNavConceal.addEventListener('click', () => {
-    const mvNavPanelHeight = mvNavPanel.clientHeight;
     (mvNavState)
-        ? (mvNavPanel.style.bottom = "-" + mvNavPanelHeight + "px",
+        ? (mvNavPanel.style.bottom = "-40vh",
             mvNavState = false)
         : (console.log('Error has occured in Ln.: 41-52'));
 });

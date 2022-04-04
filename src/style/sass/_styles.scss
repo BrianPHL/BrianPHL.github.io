@@ -68,7 +68,8 @@
 
             i:first-child {
 
-                margin-right: 13px;
+                margin-right: 10px;
+                margin-top: 3px;
 
             }
 
@@ -77,91 +78,102 @@
         &-nav {
 
             grid-template-columns: 1fr;
-            grid-template-rows: auto 10vh;
+            grid-template-rows: 32vh 8vh;
             background-color: var(--secondary);
-            border-top: 1px solid var(--border-line);
-            transition: var(--trans-slow);
+            transition: 0.4s ease all;
             position: fixed;
             display: grid;
-            bottom: -50%;
-            height: auto;
-            
+            bottom: -40vh;
+            height: 40vh;
+            width: 100%;
+
             &-links {
-                
+
                 justify-content: center;
-                flex-direction: row;
-                padding-bottom: 15px;
-                margin-right: 10px;
+                flex-direction: column;
+                padding-bottom: 10px;
+                padding-top: 10px;
                 align-items: center;
-                margin-left: 10px;
-                padding-top: 15px;
-                flex-wrap: wrap;
+                border-top: 1px solid var(--border-line);
                 grid-row: 1;
-                display: flex;
+                display: grid;
 
-                i {
+                a {
 
-                    margin: 10px;
-                    align-items: center;
-                    display: flex;
+                    text-align: center;
+                    text-decoration: none;
+                    font-weight: 500;
+                    transition: var(--trans-fast);
+                    margin: 5px;
                     color: var(--text);
-                    
-                    a {
-                        
-                        text-decoration: none;
-                        font-weight: 500;
-                        margin-left: 10px;
-                        font-style: normal;
-                        font-size: 1.2rem;
-                        color: var(--text);
-    
-                    }
 
                 }
 
-                i:hover {
+                a:hover {
 
                     color: var(--accent);
-
-                    a {
-
-                        color: var(--accent);
-
-                    }
 
                 }
 
             }
 
-            &-close {
+            &-footer {
 
-                place-items: center;
+                grid-template-columns: 2fr 1fr;
                 border-top: 1px solid var(--border-line);
                 grid-row: 2;
                 display: grid;
-                
-                i {
-                    
-                    background-color: var(--accent);
-                    justify-content: center;
-                    border-radius: 100%;
+                width: 100%;
+
+                &-copyright {
+
                     align-items: center;
-                    font-size: 1rem;
-                    display: flex;
-                    border: 2px solid var(--accent);
-                    height: 40px;
-                    width: 40px;
-                    color: var(--secondary);
+                    margin-left: 20px;
+                    grid-column: 1;
+                    display: grid;
+                    color: white;
+
+                    small {
+
+                        font-weight: 500;
+                        font-size: 0.7rem;
+                        color: var(--text);
+
+                    }
 
                 }
+
+                &-close {
+
+                    justify-content: right;
+                    margin-right: 20px;
+                    align-items: center;
+                    grid-column: 2;
+                    display: grid;
+                    height: inherit;
+
+                    i {
+
+                        background-color: var(--accent);
+                        border-radius: 100px;
+                        place-items: center;
+                        display: grid;
+                        border: 2px solid var(--accent);
+                        height: 35px;
+                        width: 35px;
+                        color: var(--secondary);
+
+                    }
+
+                    i:hover {
     
-                i:hover {
-    
-                    background-color: transparent;
-                    border: 2px solid var(--accent);
-                    cursor: pointer;
-                    color: var(--accent);
-    
+                        background-color: transparent;
+                        border: 2px solid var(--accent);
+                        cursor: pointer;
+                        color: var(--accent);
+        
+                    }
+
                 }
 
             }
