@@ -170,8 +170,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
