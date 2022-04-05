@@ -118,7 +118,7 @@ body {
   height: inherit;
 }
 .header-mobile-logo img {
-  width: 2.5rem;
+  width: 6vh;
 }
 .header-mobile-btns {
   -webkit-box-pack: right;
@@ -134,16 +134,21 @@ body {
 }
 .header-mobile-btns i {
   margin-top: 5px;
-  font-size: 1.5rem;
+  font-size: 4vh;
   color: var(--text);
+}
+.header-mobile-btns i:first-child {
+  margin-right: 10px;
 }
 .header-mobile-btns i:hover {
   cursor: pointer;
   color: var(--accent);
 }
-.header-mobile-btns i:first-child {
-  margin-right: 10px;
+.header-mobile-btns .fa-moon {
   margin-top: 3px;
+}
+.header-mobile-btns .fi-rr-sun {
+  margin-top: 6px;
 }
 .header-mobile-nav {
   grid-template-columns: 1fr;
