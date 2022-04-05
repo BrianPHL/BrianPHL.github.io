@@ -118,7 +118,7 @@ body {
   height: inherit;
 }
 .header-mobile-logo img {
-  width: 6vh;
+  width: 5vh;
 }
 .header-mobile-btns {
   -webkit-box-pack: right;
@@ -134,7 +134,7 @@ body {
 }
 .header-mobile-btns i {
   margin-top: 5px;
-  font-size: 4vh;
+  font-size: 3.25vh;
   color: var(--text);
 }
 .header-mobile-btns i:first-child {
