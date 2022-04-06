@@ -260,7 +260,7 @@
             font-size: 0.8rem;
             display: grid;
             height: 40px;
-            border: 1px solid var(--accent);
+            border: 1px solid rgb(150, 150, 150);
             margin: 5px;
             width: 150px;
             color: var(--text);
@@ -269,7 +269,7 @@
 
         a:hover {
 
-            background-color: var(--accent);
+            cursor: not-allowed;
 
         }
 
