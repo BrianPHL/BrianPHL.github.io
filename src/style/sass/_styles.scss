@@ -74,7 +74,7 @@
 
             .fa-moon {
 
-                margin-top: 5px;
+                margin-top: 4.7px;
 
             }
 
@@ -113,7 +113,7 @@
 
                     text-align: center;
                     text-decoration: none;
-                    font-weight: 500;
+                    font-weight: 400;
                     transition: var(--trans-fast);
                     margin: 5px;
                     color: var(--text);
@@ -221,7 +221,7 @@
 
         h2 {
 
-            font-weight: 500;
+            font-weight: 400;
             font-size: 1rem;
             color: var(--text);
 
@@ -260,7 +260,7 @@
             font-size: 0.8rem;
             display: grid;
             height: 40px;
-            border: 1px solid var(--accent);
+            border: 1px solid rgb(150, 150, 150);
             margin: 5px;
             width: 150px;
             color: var(--text);
@@ -269,7 +269,7 @@
 
         a:hover {
 
-            background-color: var(--accent);
+            cursor: not-allowed;
 
         }
 
