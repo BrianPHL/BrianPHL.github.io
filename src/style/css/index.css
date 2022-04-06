@@ -145,10 +145,10 @@ body {
   color: var(--accent);
 }
 .header-mobile-btns .fa-moon {
-  margin-top: 3px;
+  margin-top: 5px;
 }
 .header-mobile-btns .fi-rr-sun {
-  margin-top: 6px;
+  margin-top: 5px;
 }
 .header-mobile-nav {
   grid-template-columns: 1fr;
